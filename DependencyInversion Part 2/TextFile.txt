@@ -3,4 +3,4 @@
 Jeg hedder Kaj
 og elsker kager
 
-Dette er part 1 af dependeency inversion
+Dette er part 2 af dependeency inversion
