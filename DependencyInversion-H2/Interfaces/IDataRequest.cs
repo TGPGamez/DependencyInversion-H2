@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DependencyInversion_H2.Interfaces
 {
-    interface IDataReader
+    public interface IDataRequest
     {
         /// <summary>
         /// Used to read data
