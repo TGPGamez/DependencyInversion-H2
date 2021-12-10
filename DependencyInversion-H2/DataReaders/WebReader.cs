@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DependencyInversion_H2.DataReaders
 {
-    public class WebReader : IDataRequest
+    public class WebReader
     {
         public string Url { get; set; }
 
@@ -18,16 +18,11 @@ namespace DependencyInversion_H2.DataReaders
             Url = url;
         }
 
-        public string RequestData()
-        {
-            return GetResponseUrl();
-        }
-
         /// <summary>
         /// USed to get data from a website out from the Url
         /// </summary>
         /// <returns>All the website data as a string</returns>
-        private string GetResponseUrl()
+        public string GetResponseUrl()
         {
             try
             {

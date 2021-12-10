@@ -1,5 +1,4 @@
 ﻿using DependencyInversion_H2.DataReaders;
-using DependencyInversion_H2.Interfaces;
 using System;
 
 namespace DependencyInversion_H2
@@ -8,11 +7,10 @@ namespace DependencyInversion_H2
     {
         static void Main(string[] args)
         {
-            DataReader dataReader = new DataReader();
 
             Console.WriteLine("PART 1");
-            IDataRequest webRequest = new WebReader("https://docs.microsoft.com");
-            Console.WriteLine(dataReader.Read(webRequest));
+            WebReader webReader = new WebReader("https://docs.microsoft.com");
+            Console.WriteLine(webReader.GetResponseUrl());
             Console.WriteLine();
             Console.WriteLine("Press any key to finish..");
             Console.ReadKey();
